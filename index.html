@@ -124,8 +124,28 @@
         </div>
     </div>
     <!-- Responsive data table -->
+
     <div class="container"> 
-<div class="pmd-card pmd-z-depth">
+    	<!--without background tab example -->
+<!--Tab with Dropdown example -->
+<div class="pmd-card pmd-z-depth dropdown-tab"> 
+	<div class="pmd-tabs pmd-tabs-bg">
+		<div class="pmd-tab-active-bar"></div>
+		<ul class="nav nav-tabs" role="tablist">
+			<li role="presentation" class="active"><a href="#home-dropdown" aria-controls="home" role="tab" data-toggle="tab">Spelunky HD</a></li>
+			<li role="presentation"><a href="#about-dropdown" aria-controls="about" role="tab" data-toggle="tab">Spelunky 2</a></li>
+			<li role="presentation"><a href="#work-dropdown" aria-controls="work" role="tab" data-toggle="tab">Spelunky Classic</a></li>
+			<li class="dropdown pmd-dropdown" role="presentation"> <a aria-expanded="false" role="button" href="javascript:void(0);" data-toggle="dropdown" class="dropdown-toggle"> More <span class="caret"></span> </a>
+				<ul role="menu" class="dropdown-menu">
+					<li><a href="javascript:void(0);">Test</a></li>
+					<li><a href="javascript:void(0);">Test2</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="pmd-card-body">
+		<div class="tab-content">
+			<div role="tabpanel" class="tab-pane active" id="home-dropdown"><div class="pmd-card pmd-z-depth">
     <table id="example" class="table pmd-table table-hover table-striped display responsive nowrap" cellspacing="0">
         <thead>
             <tr>
@@ -189,6 +209,75 @@
         </tbody>
     </table>
 </div>
+</div>
+			<div role="tabpanel" class="tab-pane" id="about-dropdown"><div class="pmd-card pmd-z-depth">
+    <table id="example" class="table pmd-table table-hover table-striped display responsive nowrap" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Rank</th>
+                <th>Player</th>
+                <th>Points</th>
+                <th>Spelunker</th>
+                <th>Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Krille71</td>
+                <td>1,000,000</td>
+                <td><img alt="" src="assets/img/volcano-idol-31.png" class="img-responsive" /></td>
+                <td><i class="material-icons md-dark pmd-lg">description</i></td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Krille71</td>
+                <td>1,000,000</td>
+                <td><img alt="" src="assets/img/volcano-idol-31.png" class="img-responsive" /></td>
+                <td><i class="material-icons md-dark pmd-lg">description</i></td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Krille71</td>
+                <td>1,000,000</td>
+                <td><img alt="" src="assets/img/volcano-idol-31.png" class="img-responsive" /></td>
+                <td><i class="material-icons md-dark pmd-lg">description</i></td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Krille71</td>
+                <td>1,000,000</td>
+                <td><img alt="" src="assets/img/volcano-idol-31.png" class="img-responsive" /></td>
+                <td><i class="material-icons md-dark pmd-lg">description</i></td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Krille71</td>
+                <td>1,000,000</td>
+                <td><img alt="" src="assets/img/volcano-idol-31.png" class="img-responsive" /></td>
+                <td><i class="material-icons md-dark pmd-lg">description</i></td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Krille71</td>
+                <td>1,000,000</td>
+                <td><img alt="" src="assets/img/volcano-idol-31.png" class="img-responsive" /></td>
+                <td><i class="material-icons md-dark pmd-lg">description</i></td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Krille71</td>
+                <td>1,000,000</td>
+                <td><img alt="" src="assets/img/volcano-idol-31.png" class="img-responsive" /></td>
+                <td><i class="material-icons md-dark pmd-lg">description</i></td>
+            </tr>
+        </tbody>
+    </table>
+</div></div>
+			<div role="tabpanel" class="tab-pane" id="work-dropdown"></div>
+		</div>
+	</div>
+</div> <!--Tab with Dropdown example end-->
 </div>
       
 	<!------------------------------
@@ -255,30 +344,6 @@
  	------------------------------->                
 	<footer id="contact" class="section site-footer">
         <div class="container">
-			<h2 class="text-center inverse text-capitalize">Contact Us</h2>
-			<!--Request form -->
-			<div class="card-form">
-			   <form class="form-inverse">
-					<div class="text-left">
-						<div class="form-group pmd-textfield pmd-textfield-floating-label">
-							<label for="regular2" class="control-label">Name</label>
-							<input type="text" id="regular2" class="form-control">
-						</div>
-						<div class="form-group pmd-textfield pmd-textfield-floating-label">
-							<label for="regular3" class="control-label">Email</label>
-							<input type="text" id="regular3" class="form-control">
-						</div>
-						<div class="form-group pmd-textfield pmd-textfield-floating-label">
-							<label class="control-label">Message</label>
-							<textarea class="form-control" placeholder="" ></textarea>
-						</div>
-					</div>
-					<div class="text-center">
-						<button type="button" class="btn btn-primary pmd-btn-outline pmd-ripple-effect btn-lg">Reset</button>
-						<button type="button" class="btn btn-primary pmd-ripple-effect btn-lg">Request us</button>
-					</div>
-				</form>                        
-			</div><!-- End Request form -->
            
             <!-- Social icons -->
             <div class="social-icons text-center">
