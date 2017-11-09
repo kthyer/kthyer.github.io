@@ -1,58 +1,340 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport">
+	
+    <title>MossRanking</title>
+    <meta name="description" content="MossRanking is a free responsive one page HTML material theme built with Propeller. It is a perfect theme for a variety of uses from blogs to personal or business portfolios."/>
+	<link rel="icon" href="assets/img/favicon.ico" type="image/x-icon" />
+	
+	<!--Google Material icon-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+	
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" media="all"/>
+    
+    <!--Propeller css-->
+    <link rel="stylesheet" href="assets/css/propeller.min.css" type="text/css" media="all"/>
+    
+    <!--Owl Carousel css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.css" type="text/css" media="all"/>
+    
+    <!--MossRanking css-->
+    <link rel="stylesheet" href="assets/css/quantify-theme.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/quantify.css" type="text/css" media="all"/>
+    	    	    
+</head>
+<body>
+	
+	<!--
+		Loader 
+ 	-->
+  	<div class="showbox" id="preloader">
+	  <div class="loader">
+		<div align="center" class="fond">
+		  <div class="contener_general">
+			  <div class="contener_mixte"><div class="ballcolor ball_1">&nbsp;</div></div>
+			  <div class="contener_mixte"><div class="ballcolor ball_2">&nbsp;</div></div>
+			  <div class="contener_mixte"><div class="ballcolor ball_3">&nbsp;</div></div>
+			  <div class="contener_mixte"><div class="ballcolor ball_4">&nbsp;</div></div>
+		  </div>
+		  <p class="loading-text">Loading...</p>
+		</div>
+	  </div>
+	</div>
+		
+	<!----------------------------
+		Navbar
+ 	----------------------------->
+	<!-- Nav menu with side menu -->
+<nav class="navbar navbar-fixed-top pmd-navbar pmd-z-depth">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button class="pmd-ripple-effect navbar-toggle pmd-navbar-toggle" type="button">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
 
-    <!-- Description and Author that will show up on search engines' snipets-->
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <!-- Icon and text on the tab bar -->
-    <link rel="icon" href="hokie.png">
-    <title>My Page</title>
-
-    <!-- Bootstrap core CSS (Best not to mess with)-->
-    <link href="bootstrap.css" rel="stylesheet">
-
-    <!-- Custom styles for this page -->
-    <link href="style.css" rel="stylesheet">
-  </head>
-
-  <body>
-
-    <div class="site-wrapper">
-
-      <div class="site-wrapper-inner">
-
-        <div class="container">
-
-          <div class="top-bar">
-            <h3 class="top-bar-heading">Kevin Hyer</h3>
-            <ul class="nav top-bar-nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="resume.html">Resume</a></li>
-              <li><a href="http://www.facebook.com/meowmixmix">Contact</a></li>
-            </ul>
-          </div>
-
-          <div class="cover">
-            <h1 class="cover-heading">Kevin Hyer</h1>
-            <p class="lead">My name is Kevin Hyer and I am a student at Virginia Tech.  I am a Business Information Technology major and a
-							computer science minor.</p>
-							
-			<button type="button" class="btn btn-default btn-lg">
-				<span href="mailto:kthyer@vt.edu" class="glyphicon glyphicon-envelope"></span> Email
-			</button>
-            <p class="lead">
-              <a href="mailto:kthyer@vt.edu" class="btn btn-lg btn-default">Email</a>
-            </p>
-          </div>
-
+          <a href="javascript:void(0);" class="navbar-brand navbar-brand-custome">Mossranking</a>
         </div>
-
-      </div>
-
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse pmd-navbar-sidebar">
+          <div class="dropdown pmd-dropdown pmd-user-info pull-right">
+              <a href="javascript:void(0);" class="btn-user dropdown-toggle media" data-toggle="dropdown" data-sidebar="true" aria-expanded="false">
+                  <div class="media-left">
+                      <img src="http://propeller.in/assets/images/avatar-icon-40x40.png" width="40" height="40" alt="avatar">
+                  </div>
+                <div class="media-body media-middle">
+                    User
+                </div>
+                <div class="media-right media-middle">
+                    <i class="material-icons md-dark pmd-sm">more_vert</i>
+                </div>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                <li><a href="javascript:void(0);">Edit Profile</a></li>
+                <li><a href="javascript:void(0);">Logout</a></li>
+              </ul>
+            </div>
+          <ul class="nav navbar-nav">
+            <li><a class="pmd-ripple-effect" href="javascript:void(0);">Rankings <span class="sr-only">(current)</span></a></li>
+            <li><a class="pmd-ripple-effect" href="javascript:void(0);">Categories</a></li>
+            <li><a class="pmd-ripple-effect" href="javascript:void(0);">Matchup</a></li>
+            <li><a class="pmd-ripple-effect" href="javascript:void(0);">Recent Runs</a></li>
+            <li><a class="pmd-ripple-effect" href="javascript:void(0);">News</a></li>
+            <li class="dropdown pmd-dropdown">
+              <a data-toggle="dropdown" class="pmd-ripple-effect dropdown-toggle" data-sidebar="true" href="javascript:void(0);">Dailies <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a class="pmd-ripple-effect" href="javascript:void(0);">Daily Leaderboard</a></li>
+                <li><a class="pmd-ripple-effect" href="javascript:void(0);">Daily Average</a></li>
+                <li><a class="pmd-ripple-effect" href="javascript:void(0);">Daily High Score</a></li>
+                <li class="divider"></li>
+                <li><a class="pmd-ripple-effect" href="javascript:void(0);">Daily Wins</a></li>
+                <li class="divider"></li>
+                <li><a class="pmd-ripple-effect" href="javascript:void(0);">Top 50 Dailies of All Time</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a class="pmd-ripple-effect" href="javascript:void(0);">Link</a></li>
+            <li class="dropdown pmd-dropdown">
+              <a aria-expanded="false" role="button" data-toggle="dropdown" data-sidebar="true" class="pmd-ripple-effect dropdown-toggle" href="javascript:void(0);">Dropdown <span class="caret"></span></a>
+              <ul role="menu" class="dropdown-menu dropdown-menu-right">
+                <li><a class="pmd-ripple-effect" href="javascript:void(0);">Action</a></li>
+                <li><a class="pmd-ripple-effect" href="javascript:void(0);">Another action</a></li>
+                <li><a class="pmd-ripple-effect" href="javascript:void(0);">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a class="pmd-ripple-effect" href="javascript:void(0);">Separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+    <div class="pmd-sidebar-overlay"></div>
+</nav>
+<!-- Section About Us -->
+    <div id="about" class="section">
+        <div class="container"> 
+            <h2 class="text-center">Ranking</h2>
+            <p class="lead text-center">The Moss Rank is based on various categories. The included categories are the four main categories: High Score, Any%, Hell% and Low%; two different daily challenge categories: Daily Average (top ten daily challenge) and Daily High Score and finally, the following challenge runs : Eggplant%, Low% Hell, No Teleporter Any%, Big Money, All Shortcuts + Olmec, No Gold Any%, No Gold Hell, No Gold Low%, Max Any%, Max Hell, Max Low%.</p>
+        </div>
     </div>
+    <!-- Responsive data table -->
+    <div class="container"> 
+<div class="pmd-card pmd-z-depth">
+    <table id="example" class="table pmd-table table-hover table-striped display responsive nowrap" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Rank</th>
+                <th>Player</th>
+                <th>Points</th>
+                <th>Spelunker</th>
+                <th>Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Kinnijup</td>
+                <td>1,000,000</td>
+                <td><img alt="" src="assets/img/volcano-idol-31.png" class="img-responsive" /></td>
+                <td><i class="material-icons md-dark pmd-lg">description</i></td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Kinnijup</td>
+                <td>1,000,000</td>
+                <td><img alt="" src="assets/img/volcano-idol-31.png" class="img-responsive" /></td>
+                <td><i class="material-icons md-dark pmd-lg">description</i></td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Kinnijup</td>
+                <td>1,000,000</td>
+                <td><img alt="" src="assets/img/volcano-idol-31.png" class="img-responsive" /></td>
+                <td><i class="material-icons md-dark pmd-lg">description</i></td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Kinnijup</td>
+                <td>1,000,000</td>
+                <td><img alt="" src="assets/img/volcano-idol-31.png" class="img-responsive" /></td>
+                <td><i class="material-icons md-dark pmd-lg">description</i></td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Kinnijup</td>
+                <td>1,000,000</td>
+                <td><img alt="" src="assets/img/volcano-idol-31.png" class="img-responsive" /></td>
+                <td><i class="material-icons md-dark pmd-lg">description</i></td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Kinnijup</td>
+                <td>1,000,000</td>
+                <td><img alt="" src="assets/img/volcano-idol-31.png" class="img-responsive" /></td>
+                <td><i class="material-icons md-dark pmd-lg">description</i></td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Kinnijup</td>
+                <td>1,000,000</td>
+                <td><img alt="" src="assets/img/volcano-idol-31.png" class="img-responsive" /></td>
+                <td><i class="material-icons md-dark pmd-lg">description</i></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+      
+	<!------------------------------
+		Section Articles To Read
+ 	------------------------------->   
+	<div id="articles-to-read" class="section articles-to-read">
+        <div class="container"> 
+          	<h2 class="text-center without-subtext">Articles to Read</h2>
+          	<div class="row">
+            	<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                	<!-- Articles Card -->
+              		<div class="pmd-card pmd-z-depth">
+						<div class="pmd-card-media">
+							<a href="javascript:void(0)" title="Headline indicating nature of articles">
+								<img alt="" src="assets/img/news-img-1.jpg" class="img-responsive" />
+							</a>
+						</div>
+                		<div class="pmd-card-body">
+                			<h4 class="pmd-card-title-text">
+								<a href="javascript:void(0)" title="Headline indicating nature of articles">My Favorite Games #1</a>
+							</h4>
+                			<p class="pmd-card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia magni, voluptate! Recusandae deleniti doloribus.</p>
+                		</div>
+              		</div><!-- End Articles Card -->
+            	</div>
+            	<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+              		<!-- Articles Card -->
+                    <div class="pmd-card pmd-z-depth">
+                		<div class="pmd-card-media">
+                        	<a href="javascript:void(0)" title="Headline indicating nature of articles.">
+                            	<img alt="" src="assets/img/news-img-2.jpg" class="img-responsive" />
+                            </a>
+                        </div>
+                		<div class="pmd-card-body">
+                			<h4 class="pmd-card-title-text">
+                  				<a href="javascript:void(0)" title="Headline indicating nature of articles.">My Favorite Games #2</a>
+                  			</h4>
+                			<p class="pmd-card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia magni, voluptate! Recusandae deleniti doloribus.</p>
+                		</div>
+              		</div><!-- End Articles Card -->
+            	</div>
+            	<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 visible-lg visible-md hidden-sm visible-md visible-xs">
+                	<!-- Articles Card -->
+              		<div class="pmd-card pmd-z-depth">
+                		<div class="pmd-card-media">
+                        	<a href="javascript:void(0)" title="Headline indicating nature of articles.">
+                            	<img alt="" src="assets/img/news-img-3.jpg" class="img-responsive" />
+                            </a>
+                        </div>
+                		<div class="pmd-card-body">
+                			<h4 class="pmd-card-title-text">
+                  				<a href="javascript:void(0)" title="Headline indicating nature of articles.">My Favorite Games #3</a>
+                  			</h4>
+                			<p class="pmd-card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia magni, voluptate! Recusandae deleniti doloribus.</p>
+                		</div>
+              		</div><!-- End Articles Card -->
+            	</div>
+            </div>
+        </div>
+    </div><!-- End Section Articles To Read --> 
 
-  </body>
+	<!------------------------------
+		footer
+ 	------------------------------->                
+	<footer id="contact" class="section site-footer">
+        <div class="container">
+			<h2 class="text-center inverse text-capitalize">Contact Us</h2>
+			<!--Request form -->
+			<div class="card-form">
+			   <form class="form-inverse">
+					<div class="text-left">
+						<div class="form-group pmd-textfield pmd-textfield-floating-label">
+							<label for="regular2" class="control-label">Name</label>
+							<input type="text" id="regular2" class="form-control">
+						</div>
+						<div class="form-group pmd-textfield pmd-textfield-floating-label">
+							<label for="regular3" class="control-label">Email</label>
+							<input type="text" id="regular3" class="form-control">
+						</div>
+						<div class="form-group pmd-textfield pmd-textfield-floating-label">
+							<label class="control-label">Message</label>
+							<textarea class="form-control" placeholder="" ></textarea>
+						</div>
+					</div>
+					<div class="text-center">
+						<button type="button" class="btn btn-primary pmd-btn-outline pmd-ripple-effect btn-lg">Reset</button>
+						<button type="button" class="btn btn-primary pmd-ripple-effect btn-lg">Request us</button>
+					</div>
+				</form>                        
+			</div><!-- End Request form -->
+           
+            <!-- Social icons -->
+            <div class="social-icons text-center">
+            	<h2 class="inverse text-capitalize">follow us on</h2>
+    			<ul class="icons-medium list-inline">
+        			<li class="facebook">
+                    	<a href="javascript:void(0)" target="_blank" class="pmd-ripple-effect">
+							<svg version="1.1"  x="0px" y="0px" width="40px" height="40px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
+                                <g>
+                                    <path fill="#FFFFFF" d="M17.5,14.5c0,0.504,0,3,0,3h-2v2.994l2,0.006v10h4v-10h3c0,0,0-0.985,0-3c-0.35,0-3,0-3,0s0-2.657,0-3
+                                        c0-0.344,0.569-1,1-1c0.43,0,1.16,0,2,0c0-0.459,0-1.537,0-3c-1.121,0-2.438,0-3,0C17.307,10.5,17.5,13.997,17.5,14.5z"/>
+                                </g>
+                            </svg>
+                        </a>
+                    </li>			
+                    <li class="youtube">
+                    	<a href="javascript:void(0)" target="_blank" class="pmd-ripple-effect">
+							<svg version="1.1" id="Layer_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
+                                <g>
+                                    <path fill="#FFFFFF" d="M29.988,18.326c-0.007-0.402-0.039-0.91-0.094-1.523c-0.057-0.614-0.137-1.163-0.24-1.646
+                                        c-0.119-0.543-0.378-1.001-0.775-1.373c-0.398-0.372-0.861-0.588-1.391-0.647c-1.651-0.186-4.147-0.278-7.488-0.278
+                                        s-5.837,0.093-7.489,0.278c-0.528,0.06-0.99,0.275-1.384,0.647c-0.395,0.372-0.651,0.83-0.771,1.373
+                                        c-0.111,0.483-0.195,1.032-0.251,1.646c-0.056,0.613-0.087,1.121-0.095,1.523C10.004,18.728,10,19.286,10,20
+                                        s0.004,1.272,0.011,1.674c0.007,0.402,0.039,0.91,0.095,1.523c0.056,0.614,0.136,1.163,0.24,1.646
+                                        c0.119,0.543,0.377,1.001,0.775,1.373c0.398,0.371,0.861,0.587,1.39,0.646c1.652,0.187,4.148,0.279,7.489,0.279
+                                        s5.837-0.093,7.488-0.279c0.529-0.06,0.99-0.275,1.385-0.646c0.395-0.372,0.65-0.83,0.77-1.373
+                                        c0.111-0.483,0.195-1.032,0.252-1.646c0.055-0.613,0.087-1.121,0.094-1.523C29.996,21.272,30,20.714,30,20
+                                        S29.996,18.728,29.988,18.326z M23.951,20.603l-5.714,3.571c-0.104,0.074-0.231,0.111-0.38,0.111c-0.111,0-0.227-0.029-0.346-0.089
+                                        c-0.246-0.134-0.368-0.343-0.368-0.625v-7.143c0-0.282,0.123-0.491,0.368-0.625c0.253-0.134,0.495-0.127,0.726,0.022l5.714,3.571
+                                        c0.223,0.126,0.334,0.327,0.334,0.603S24.174,20.477,23.951,20.603z"/>
+                                </g>
+                            </svg>
+                    	</a>
+                    </li>
+    			</ul>
+    		</div><!--End social icons -->
+		</div>
+        
+	</footer>
+	<!-- .site-footer --> 
+    
+    <!--Jquery-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    
+    <!--Bootstrap js-->
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <!--Propeller js-->
+    <script type="text/javascript" src="assets/js/propeller.min.js"></script>
+    
+    <!--Owl Carousel js-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+    
+    <!--MossRanking custom js-->
+    <script type="text/javascript" src="js/jquery.loadie.js"></script> 
+    <script type="text/javascript" src="assets/js/quantify-global.js"></script> 
+        
+</body>
 </html>
